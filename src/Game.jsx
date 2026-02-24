@@ -49,7 +49,7 @@ export default function Game() {
   );
   const [selected, setSelected] = useState(null);
   const [winner, setWinner] = useState(null);
-  const [points, setPoints] = useState(10);
+  const [points, setPoints] = useState(0);
   const [message, setMessage] = useState("");
   const [dark, setDark] = useState(false);
 
@@ -84,7 +84,7 @@ export default function Game() {
   };
 
   const refreshPoints = () => {
-    setPoints(10);
+    setPoints("");
     setMessage("");
     setWinner(null);
     setSelected(null);

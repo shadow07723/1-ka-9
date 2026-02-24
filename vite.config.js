@@ -6,4 +6,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [tailwindcss(),
     react()],
+    base:'/1-ka-9/',
 })
